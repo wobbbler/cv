@@ -3,284 +3,186 @@
 #
 
 sidebar:
-  position: right # position of the sidebar : left or right
-  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-  education: True # set to False if you want education in main section instead of in sidebar
+  position: right
+  about: True
+  education: False
 
   # Profile information
-  name: Alan Doe
-  tagline: Full Stack Developer
-  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  name: NIKITA Y.
+  tagline: Java Backend Developer
+  avatar: profile.png   # положите своё фото в assets/images/
 
-  # Sidebar links
-  email: example@email.com
-  phone: 012 345 6789
-  timezone: America/Cancun # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  # Sidebar links – заполните только то, что есть
+  email: wobbbler9@gmail.com
+  phone:
+  timezone: Europe/Moscow
   citizenship:
-  website: https://example.com/ # Include the full website URL, including "http://" or "https://".
-  linkedin: alandoe
-  xing: alandoe
-  github: jekyll
-  telegram: # add your nickname without '@' sign
+  website:
+  linkedin:
+  xing:
+  github:
+  telegram: wobbbler
   gitlab:
   bitbucket:
-  bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
-  twitter: '@jekyllrb'
-  stack-overflow: # Number/Username, e.g. 123456/alandoe
+  bluesky:
+  twitter:
+  stack-overflow:
   codewars:
-  goodreads: # Number-Username, e.g. 123456-alandoe
-  mastodon: # Please include your full Mastodon link here.
-  hackerrank: # Please provide your HackerRank username.
-  leetcode: # Please provide your LeetCode username.
-  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+  goodreads:
+  mastodon:
+  hackerrank:
+  leetcode:
+  pdf:
 
   languages:
-    title: Languages
+    title: Языки
     info:
-    - idiom: English
-      level: Native
-
-    - idiom: French
-      level: Professional
-
-    - idiom: Spanish
-      level: Professional
+    - idiom: Русский
+      level: Родной
+    - idiom: Украинский
+      level: Родной
+    - idiom: Английский
+      level: Технический (B2)
 
   interests:
-    title: Interests
+    title: Интересы
     info:
-    - item: Climbing
-      link:
-
-
-    - item: Snowboarding
-      link:
-
-
-    - item: Cooking
-      link:
-
+    - item: Микросервисная архитектура
+    - item: System Design
+    - item: Observability
 
 career-profile:
-  title: Career Profile
+  title: О себе
   summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
+    Java backend developer. Разрабатываю высоконагруженные, отказоустойчивые и масштабируемые системы на микросервисной архитектуре. 
+    Следую принципам чистой архитектуры и постоянно изучаю новые технологии.
+
 education:
-  title: Education
-  info:
-  - degree: MSc in Computer Science
-    university: University of London
-    time: 2011 - 2012
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - degree: BSc in Applied Mathematics
-    university: Bristol University
-    time: 2007 - 2011
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
+  title: Образование
+  info: []
 
 experiences:
-  title: Experiences
+  title: Пет‑проекты
   info:
-  - role: Lead Developer
-    time: 2015 - Present
-    company: Startup Hubs, San Francisco
+  - role: Разработчик
+    time: 2024
+    company: FoodDelivery Platform
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-        - Bullet point
-        - Bullet point
-  - role: Senior Software Engineer
-    time: 2014 - 2015
-    company: Google, London
+      **Стек:** Java 17, Spring Boot, Spring Cloud Gateway, PostgreSQL, Kafka, Redis, Docker, Kubernetes, Helm, GitLab CI, Grafana Stack
+
+      - Спроектировал архитектуру из 5 микросервисов (Order, Payment, Delivery, Restaurant, Notification) с синхронным и асинхронным взаимодействием.
+      - Реализовал API Gateway на Spring Cloud Gateway с маршрутизацией и централизованной валидацией JWT.
+      - Интегрировал Apache Kafka для обмена событиями между сервисами (заказ создан, оплата проведена).
+      - Оркестрировал распределённую транзакцию по паттерну Saga (хореография) с компенсационными действиями.
+      - Настроил полный observability-цикл: логи (Loki), метрики (Prometheus), трейсинг (Tempo) в Grafana.
+      - Развернул в Kubernetes с Helm-чартами, применил Network Policies.
+      - Написал интеграционные тесты с Testcontainers, нагрузочное тестирование с k6.
+
+  - role: Разработчик
+    time: 2024
+    company: BankSystem
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - role: UI Developer
-    time: 2012 - 2014
-    company: Amazon, London
+      **Стек:** Java 21, Spring Boot, MongoDB (реактивный), Kafka Streams, Resilience4j, Docker Compose, GitLab CI
+
+      - Построил сервис обработки транзакций с использованием MongoDB (реактивный драйвер).
+      - Реализовал Kafka Streams для агрегации транзакций и выявления подозрительных операций в реальном времени.
+      - Добавил механизмы отказоустойчивости: circuit breaker, retries, rate limiter (Resilience4j).
+      - Организовал централизованную конфигурацию через Spring Cloud Config Server.
+      - Автоматизировал локальный запуск окружения через Docker Compose (Kafka, MongoDB).
+      - Настроил CI/CD в GitLab с прогоном тестов и публикацией образов.
+
+  - role: Разработчик
+    time: 2024
+    company: BookingPlatform
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
+      **Стек:** Java 17, Spring Boot, PostgreSQL, Redis, Liquibase, Keycloak, Docker, Kubernetes, Helm
+
+      - Построил многомодульный монолит с выделением модулей по функциональности.
+      - Внедрил аутентификацию и авторизацию через Keycloak (OAuth2, OpenID Connect).
+      - Реализовал кэширование часто запрашиваемых данных (доступные слоты) с помощью Redis.
+      - Оптимизировал запросы к БД: анализ через EXPLAIN, добавление индексов, настройка HikariCP.
+      - Подготовил multi-stage Dockerfile, Kubernetes-манифесты (Deployment, Service, Ingress, ConfigMap, Secret).
+      - Настроил Ingress с NGINX, выпустил тестовый SSL-сертификат.
+      - Документировал API с OpenAPI и Swagger UI.
 
 certifications:
-  title: Certifications
-  list:
-  - name: CV Builder
-    start: 2020
-    end: 2021
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.google.com
-    credentialname: Google
-    details: |
-      Details about cert. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
-
-      Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-      fringilla vel. Ut euismod, sem sed vulputate venenatis,
-      justo diam viverra velit, sed rhoncus leo leo eu justo.
-      Suspendisse placerat risus ante, sed porta nisi blandit at.
-  - name: Git learning
-    start: 2019
-    end:
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.github.com
-    credentialname: Github
-    details: |
-      Older certification. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
+  title: Сертификаты
+  list: []
 
 projects:
-  title: Projects
+  title: Ссылки на репозитории
   intro: >
-    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+    Исходный код и документация пет‑проектов.
   assignments:
-  - title: Velocity
-    link: "#hook"
-    tagline: "A responsive website template designed to help startups promote, market and sell their products."
-
-  - title: DevStudio
-    link: "#"
-    tagline: "A responsive website template designed to help web developers/designers market their services."
-
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+  - title: FoodDelivery
+    link: "https://github.com/ваш-username/fooddelivery"
+    tagline: "Микросервисная платформа доставки еды."
+  - title: BankSystem
+    link: "https://github.com/ваш-username/banksystem"
+    tagline: "Реактивная обработка транзакций с Kafka Streams."
+  - title: BookingPlatform
+    link: "https://github.com/ваш-username/bookingplatform"
+    tagline: "Модульная система бронирования с Keycloak и Redis."
 
 oss:
-  title: OSS Contributions
-  intro: >
-    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  contributions:
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+  title: Open Source
+  intro: ""
+  contributions: []
 
 publications:
-  title: Publications
-  intro: |
-    You can list your publications in this section. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-    bibendum fringilla a eu lectus.
-  papers:
-  - title: The Art of Computer Programming
-    link: "#"
-    authors: Donald E. Knuth
-    conference: Addison-Wesley, 1968
-
-  - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-    link: "#"
-    authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-    conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-  - title: A syntax directed compiler for Algol 60
-    link: "#"
-    authors: Edgar T. Irons
-    conference: "Comm. ACM 4 (1961), 51–55"
+  title: Публикации
+  intro: ""
+  papers: []
 
 recommendations:
-  title: Recommendations
-  list:
-  - person: Yareli Perez
-    email: perezyareli@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      Alan Doe is a super employee!
-  - person: Lara Henderson
-    email: larah@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      I would like to work with Alan Doe again!
-
-      He is a great employee!
+  title: Рекомендации
+  list: []
 
 skills:
-  title: Skills &amp; Proficiency
+  title: Навыки и компетенции
 
   toolset:
-  - name: Python & Django
-    level: 98%
+  - name: "Programming Languages & Tools"
+    level: "Java (LTS), Spring Framework, SOLID, GoF, REST API, Maven, Git"
 
-  - name: Javascript & jQuery
-    level: 98%
+  - name: "Security"
+    level: "Spring Security (JWT, OAuth2, Basic), Keycloak, CORS/CSRF, централизованная валидация токенов в API Gateway"
 
-  - name: Angular
-    level: 98%
+  - name: "DB & Caching"
+    level: "PostgreSQL/H2, Hibernate/JPA, JDBC, Liquibase, HikariCP, Caffeine, оптимизация запросов (EXPLAIN)"
 
-  - name: HTML5 & CSS
-    level: 95%
+  - name: "Redis"
+    level: "будет дополнено"
 
-  - name: Ruby on Rails
-    level: 85%
+  - name: "Apache Kafka"
+    level: "Kafka Streams (будет дополнено)"
 
-  - name: Sketch & Photoshop
-    level: 60%
+  - name: "Resilience4j"
+    level: "retries, circuit breaker, rate limiter, time limiter, bulkhead"
+
+  - name: "Full Observability"
+    level: "логи (SLF4J/Logback → Promtail → Loki), метрики (Actuator → Micrometer → Prometheus), трейсинг (OpenTelemetry → Collector → Tempo), всё в Grafana"
+
+  - name: "DevOps"
+    level: "Docker (multi-stage, Compose, Hub), Kubernetes (Deployment, Service, Ingress, ConfigMap, Secret, PVC, Helm, Network Policies), GitOps (ArgoCD), Operators"
+
+  - name: "API Gateway"
+    level: "Spring Cloud Gateway, NGINX"
+
+  - name: "Cloud Native"
+    level: "опыт работы с AWS, GCP"
+
+  - name: "CI/CD"
+    level: "Spring Profiles, GitLab CI/CD"
+
+  - name: "Testing"
+    level: "JUnit 5, Mockito, Spring Boot Test, @SpringBootTest, Testcontainers, Postman, k6"
+
+  - name: "Additional Tools"
+    level: "Lombok, MapStruct, Validation, Apache Commons Lang / Guava, JavaDoc, SpringDoc OpenAPI, Swagger UI/contract first"
+
+  - name: "Other Skills"
+    level: "IntelliJ IDEA, VS Code, Linux/терминал, SSH, сети, алгоритмы (Big O), Codewars/LeetCode (XXX задач), Blind typing (XXX wpm), технический английский"
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
